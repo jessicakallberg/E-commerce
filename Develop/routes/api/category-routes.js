@@ -1,17 +1,13 @@
 const router = require('express').Router();
-const {Category,Product} = require('../../models')
+const {Category,Product} = require('../../models');
 
 //GET all categories
 router.get('/', (req, res) => {
     // find all categories
     // be sure to include its associated Products
-    Category.findAll({
-        include: [Product]
-    }) 
-    .then((categories) => {
-        res.json(categories)
-    })
-  });
+    Product.belongsTo(Category, {
+      foreignKey: 'category_id'
+     });
 
 //GET one category
 router.get('/:id', (req, res) => {
