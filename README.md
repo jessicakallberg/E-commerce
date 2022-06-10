@@ -21,6 +21,8 @@ View a video tutorial here
 <img src="https://contrib.rocks/image?repo=jessicakallberg/readmeGenerator" />
 </a>
 
+Jessica Kallberg- https://github.com/jessicakallberg
+
 ## Languages Used
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jessicakallberg&layout=compact&s_count=8)](https://github.com/jessicakallberg/github-readmeGenerator)
