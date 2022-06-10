@@ -5,7 +5,7 @@
 
 ![Node](https://img.shields.io/badge/Node.js-339933?style=plasticfor-the-badge&logo=nodedotjs&logoColor=white)
 
-![Sequelize]
+![Sequelize](https://img.shields.io/badge/Sequelize.js-339933?style=plasticfor-the-badge)
 ## Description
 This application is for a retail managers or owners for an internet retail company to keep track of product inventory. This back end utilizes the latest technologies to make sure you stay competitive with other e-commerce companies. Incredibly user friendly
 
