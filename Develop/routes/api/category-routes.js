@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     Product.belongsTo(Category, {
       foreignKey: 'category_id'
      });
-
+  });
 //GET one category
 router.get('/:id', (req, res) => {
     // find one category by its `id` value
@@ -20,17 +20,21 @@ router.get('/:id', (req, res) => {
         include: [Product]
     })
   });
-//POST a category
+
+
+
+
+
+
+
+
+  
+  //POST a category
 router.post('/', (req, res) => {
-    Category.create({
-      category_name: req.body.category_name
-    })
-    .then(dbProductData => res.json(dbProductData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
-  });
+  Category.create(req.body)
+    .then((dbProductData) => res.status(200).json(dbProductData))
+    .catch((err) => res.status(400).json(err));
+});
 //update (PUT) a category
 router.put('/:id', (req, res) => {
     // update a category by its `id` value
